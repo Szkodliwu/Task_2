@@ -58,3 +58,8 @@ exIcon.addEventListener('click', () => {
 	})
 	getExchangeRate()
 })
+
+function toggleMenu() {
+	var navList = document.getElementById('navList')
+	navList.classList.toggle('active')
+}

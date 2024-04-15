@@ -142,7 +142,7 @@ body {
 }
 
 .conversion-form label {
-	color: #9e9dd0;
+	color: #fff;
 	font-size: 24px;
 	margin-left: 10px;
 }
@@ -214,10 +214,6 @@ body {
 	transition: all 0.3s ease;
 }
 
-.conversion-form .reverse:hover {
-	color: #675afe;
-}
-
 .reverse img {
 	width: 50px;
 	height: 50px;
@@ -226,7 +222,7 @@ body {
 .conversion-form .result {
 	font-size: 24px;
 	margin: 20px 0 30px;
-	color: #9e9dd0;
+	color: #fff;
 }
 
 .conversion-form button {
@@ -256,7 +252,7 @@ body {
 	.converter {
 		width: 90%;
 		height: auto;
-		padding: 10px;
+		padding: 40px 20px;
 		margin-top: 20px;
 	}
 }
@@ -286,5 +282,67 @@ body {
 
 	.converter {
 		height: auto;
+	}
+}
+
+.hamburger-menu {
+	display: flex;
+	align-items: center;
+}
+
+.hamburger-menu-icon {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.bar {
+	width: 100%;
+	height: 3px;
+	background-color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+	.hamburger-menu-icon {
+		display: flex;
+	}
+
+	.nav-main__list {
+		display: none;
+		flex-direction: column;
+		padding: 10px;
+		background-color: #f9f4ff;
+		border-radius: 5px;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	}
+
+	.nav-main__item {
+		margin-bottom: 10px;
+	}
+
+	.nav-main__link {
+		font-size: 18px;
+	}
+
+	.nav-main__list.active {
+		display: flex;
+	}
+
+	.conversion-form input,
+	.conversion-form select,
+	.conversion-form button,
+	.conversion-form .result {
+		font-size: 20px !important;
+	}
+
+	.conversion-form label {
+		font-size: 18px;
 	}
 }

@@ -13,17 +13,24 @@
 				<div class="header">
 					<div class="circle" alt="Circle Icon"></div>
 					<nav class="nav-main">
-						<ul class="nav-main__list">
-							<li class="nav-main__item">
-								<a class="nav-main__link" href="#">Home</a>
-							</li>
-							<li class="nav-main__item">
-								<a class="nav-main__link" href="#">About</a>
-							</li>
-							<li class="nav-main__item">
-								<a class="nav-main__link" href="#">Contact</a>
-							</li>
-						</ul>
+						<div class="hamburger-menu">
+							<div class="hamburger-menu-icon" onclick="toggleMenu()">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+							<ul class="nav-main__list" id="navList">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#">Home</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#">About</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</div>
