@@ -24,7 +24,7 @@ let Country_List = {
 	BSD: 'BS',
 	NOK: 'BV',
 	BWP: 'BW',
-	BYR: 'BY',
+	BYN: 'BY',
 	BZD: 'BZ',
 	CAD: 'CA',
 	CDF: 'CD',

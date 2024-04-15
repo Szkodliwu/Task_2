@@ -5,8 +5,6 @@ const exIcon = document.querySelector('.conversion-form .reverse')
 const amount = document.querySelector('.conversion-form input')
 const exRateTxt = document.querySelector('.conversion-form .result')
 
-// Event listener for currency dropdowns (select)
-
 ;[fromCur, toCur].forEach((select, i) => {
 	for (let curCode in Country_List) {
 		const selected =
@@ -27,8 +25,6 @@ const exRateTxt = document.querySelector('.conversion-form .result')
 	})
 })
 
-// Function to get exchange rate from api
-
 async function getExchangeRate() {
 	const amountVal = amount.value || 1
 	exRateTxt.innerText = 'Getting exchange rate...'
@@ -44,8 +40,6 @@ async function getExchangeRate() {
 		exRateTxt.innerText = 'Something went wrong...'
 	}
 }
-
-// Event listeners for button and exchange icon click
 
 window.addEventListener('load', getExchangeRate)
 getBtn.addEventListener('click', e => {

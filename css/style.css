@@ -135,14 +135,15 @@ body {
 	border-radius: 5px;
 	font-size: 26px;
 	padding: 0 15px;
-	background: transparent;
-	color: #9e9dd0;
+	background: #fee2e4;
+	color: #35253e;
 	border: 1px solid #999;
 	transition: all 0.3s ease;
 }
 
 .conversion-form label {
 	color: #9e9dd0;
+	font-size: 24px;
 }
 
 .conversion-form input:hover,
@@ -177,7 +178,7 @@ body {
 	align-items: center;
 	border-radius: 5px;
 	padding: 0 20px;
-	background: transparent;
+	background: #fee2e4;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -193,10 +194,10 @@ body {
 .conversion-form .select-input select {
 	width: 100%;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 24px;
 	background: none;
 	margin: 0 -5px 0 5px;
-	color: #9e9dd0;
+	color: #35253e;
 	border: none;
 }
 
@@ -210,15 +211,19 @@ body {
 	font-size: 22px;
 	transform: rotate(90deg);
 	transition: all 0.3s ease;
-	color: #9e9dd0;
 }
 
 .conversion-form .reverse:hover {
 	color: #675afe;
 }
 
+.reverse img {
+	width: 50px;
+	height: 50px;
+}
+
 .conversion-form .result {
-	font-size: 18px;
+	font-size: 24px;
 	margin: 20px 0 30px;
 	color: #9e9dd0;
 }
@@ -226,9 +231,9 @@ body {
 .conversion-form button {
 	width: 100%;
 	height: 42px;
-	color: #fff;
-	background: #20232c;
-	font-size: 16px;
+	color: #35253e;
+	background: #fee2e4;
+	font-size: 24px;
 	cursor: pointer;
 	border-radius: 5px;
 	transition: all 0.3s ease;
