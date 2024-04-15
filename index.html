@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="icon" type="image/png" href="./assets/icon/converter.png" />
 		<title>Currency Converter Task Two</title>
 	</head>
 	<body>
@@ -27,6 +28,49 @@
 				</div>
 			</div>
 		</header>
+
+		<div class="header-section">
+			<div>
+				<h2>Currency Converter</h2>
+				<p>
+					Привет! Добро пожаловать в наш конвертер валют. Начните конвертацию и
+					получите актуальные результаты!
+				</p>
+			</div>
+		</div>
+
+		<div class="converter">
+			<form class="conversion-form">
+				<div class="amount">
+					<label for="amount">Amount</label>
+					<input type="text" id="amount" name="amount" value="1" required />
+				</div>
+				<div class="convert-box">
+					<div class="from">
+						<label for="from">From</label>
+						<div class="select-input">
+							<img src="https://flagcdn.com/48x36/us.png" alt="From Currency" />
+							<select id="from" name="from" required>
+								<option value="usd">USD</option>
+								<option value="eur">EUR</option>
+							</select>
+						</div>
+					</div>
+					<div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+					<div class="to">
+						<label for="to">To</label>
+						<div class="select-input">
+							<img src="https://flagcdn.com/48x36/gb.png" alt="To Currency" />
+							<select id="to" name="to" required>
+								<option value="usd">USD</option>
+								<option value="eur">EUR</option>
+							</select>
+						</div>
+					</div>
+					<div class="result">Getting exchange rate...</div>
+					<button type="submit">Get Exchange Rate</button>
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
